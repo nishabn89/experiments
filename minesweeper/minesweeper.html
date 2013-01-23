@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+		<title>Minesweeper</title>
+		<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+		<meta content="utf-8" http-equiv="encoding">
+		<link rel="stylesheet" type="text/css" href="minesweeper.css">
+	</head>
+	<body>
+		<div>
+			<div class="controller">
+				<div class="difficulty_container">
+					Difficulty Level:<br/>				
+					<input class="difficulty" id="easy" type="radio" name="difficulty" value="easy" checked='checked'>				
+					<label class="difficulty" for="easy">Easy</label>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<input class="difficulty" id="medium" type="radio" name="difficulty" value="medium">
+					<label class="difficulty" for="medium">Medium</label>
+					<input class="difficulty" id="hard" type="radio" name="difficulty" value="hard">
+					<label class="difficulty" for="hard">Hard</label>
+				</div>
+				<div class="button_container"> 
+					<button id="new_game" class="button newgame_button" type="button">New Game</button>
+					<button id="validate_game" class="button validate_button" disabled="disabled" type="button">Validate</button>
+					<button id="cheat_game" class="button cheat_button" disabled="disabled" type="button">Cheat</button>
+					<button id="load_game" class="button load_button" disabled="disabled" type="button">Load Game</button>
+					<button id="save_game" class="button save_button" disabled="disabled" type="button">Save Game</button>
+					<button id="clear_game" class="button clear_button" disabled="disabled" type="button">Clear Saved Game</button>
+				</div>
+			</div>
+			<div class="main_canvas">
+				<div class="blinkTextDiv"><p id="notifyWinArea"></p></div>
+				<table id="board" border="1" class="board">
+				</table> 
+			</div>		
+		</div>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/json2/20110223/json2.js"></script>		
+		<script src="jquery-1.7.1.min.js"></script>
+		<script src="https://raw.github.com/andris9/jStorage/master/jstorage.js"></script>
+		<script src="minesweeper.js"></script>
+	</body>
+</html>
