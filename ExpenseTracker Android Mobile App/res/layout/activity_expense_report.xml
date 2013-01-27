@@ -1,0 +1,172 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp"
+    tools:context=".ExpenseReportActivity" >
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="4dp"
+        android:paddingTop="4dp"
+        android:background="#D7FAB1" 
+        android:paddingLeft="12dp"
+	    android:paddingRight="12dp">
+		<TextView 
+		    android:id="@+id/expenseRep_name"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="@string/expenseRep_name"
+		    android:textSize="8pt"/>
+		<TextView
+		    android:id="@+id/expenseRep_expenseName"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content" 
+		    android:gravity="right"/>
+    </TableRow>
+    
+	<TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="4dp"
+        android:paddingTop="4dp"
+        android:paddingLeft="12dp"
+	    android:paddingRight="12dp"
+	    android:background="#30C229" >
+		<TextView 
+		    android:id="@+id/expenseRep_category"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="@string/expenseRep_category"
+		    android:textSize="8pt"/>
+		<TextView
+		    android:id="@+id/expenseRep_expenseCategory"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:gravity="right"/>
+    </TableRow>
+    
+	<TableRow 
+	    android:id="@+id/tableRow3"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:paddingBottom="4dp"
+        android:paddingTop="4dp"
+	    android:background="#D7FAB1"
+	    android:paddingLeft="12dp"
+	    android:paddingRight="12dp">
+	    <TextView 
+	        android:id="@+id/expenseRep_amount"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/expenseRep_amount"
+	        android:textSize="8pt"/>
+	    <TextView 
+	        android:id="@+id/expenseRep_expenseAmount"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="right"/>
+	</TableRow>
+    
+	<TableRow 
+	    android:id="@+id/tableRow4"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:paddingBottom="4dp"
+        android:paddingTop="4dp"
+	    android:paddingLeft="12dp"
+	    android:paddingRight="12dp"
+	    android:background="#30C229">
+	    <TextView 
+	        android:id="@+id/expenseRep_date"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/expenseRep_date"
+	        android:textSize="8pt"/>
+	    <TextView 
+	        android:id="@+id/expenseRep_expenseDate"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="right"/>
+	</TableRow>
+	
+	<TableRow 
+	    android:id="@+id/tableRow5"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:paddingBottom="4dp"
+        android:paddingTop="4dp"
+	    android:background="#D7FAB1"
+	    android:paddingLeft="12dp"
+	    android:paddingRight="12dp">
+	    <TextView 
+	        android:id="@+id/expenseRep_location"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/expenseRep_location"
+	        android:textSize="8pt"/>
+	    <TextView 
+	        android:id="@+id/expenseRep_expenseLocation"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="right"/>
+	</TableRow>
+	
+	<TableRow 
+	    android:id="@+id/tableRow6"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:paddingBottom="4dp"
+        android:paddingTop="4dp"
+	    android:paddingLeft="12dp"
+	    android:paddingRight="12dp"
+	    android:background="#30C229">
+	    <TextView 
+	        android:id="@+id/expenseRep_note"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/expenseRep_note"
+	        android:textSize="8pt"/>
+	    <TextView 
+	        android:id="@+id/expenseRep_expenseNote"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="right"/>
+	</TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow7"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="12dp" >
+
+        <ImageView
+            android:id="@+id/user_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/expenseRep_groupTag"
+            android:src="@drawable/user_group" />
+
+        <TextView
+            android:id="@+id/expenseRep_groupTag"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="25dp"
+            android:text="@string/expenseRep_groupTag"
+            android:textSize="8pt" />
+    </TableRow>
+
+    <ListView
+        android:id="@+id/mylist"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp" />
+
+</LinearLayout>

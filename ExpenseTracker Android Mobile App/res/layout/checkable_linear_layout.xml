@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <com.banyet.expensetracker.CheckableLinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+	  android:layout_width="fill_parent"
+	  android:layout_height="fill_parent"
+	  android:padding="5dip"
+      android:orientation="vertical" 
+  > 
+    
+    <CheckedTextView
+	        android:id="@+id/friends_checkbox"
+	        android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center_vertical"
+		    android:ellipsize="marquee"
+	        android:singleLine="true"
+	        android:textAppearance="?android:attr/textAppearanceLarge"
+    		android:checkMark="?android:attr/listChoiceIndicatorMultiple"	        
+	    />
+
+    <TextView
+	        android:id="@+id/friends_info"	
+	        android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center_vertical"
+		    android:ellipsize="marquee"
+	        android:singleLine="true"
+	        android:textAppearance="?android:attr/textAppearanceSmall"
+	 />
+
+</com.banyet.expensetracker.CheckableLinearLayout>

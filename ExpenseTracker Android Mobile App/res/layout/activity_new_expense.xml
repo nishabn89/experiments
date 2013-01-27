@@ -1,0 +1,137 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp"
+    tools:context=".NewExpenseActivity" >
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/newExpense_name"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/newExpense_name" />
+
+        <EditText
+            android:id="@+id/newExpense_editName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/newExpense_editName" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/newExpense_category"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/newExpense_category" />
+
+        <Spinner
+            android:id="@+id/newExpense_spinnerCategory"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/newExpense_amount"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/newExpense_amount" />
+
+        <EditText
+            android:id="@+id/newExpense_editAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/newExpense_editAmount"
+            android:inputType="numberDecimal" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/newExpense_location"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/newExpense_location" />
+
+        <EditText
+            android:id="@+id/newExpense_editLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/newExpense_editLocation"
+            android:inputType="textPostalAddress"
+            android:focusable="false"
+            android:editable="false"
+            android:onClick="onClick_Location"/>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/newExpense_date"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/newExpense_date" />
+
+        <EditText
+            android:id="@+id/newExpense_editDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:onClick="showDatePickerDialog"
+            android:focusable="false"
+            android:editable="false"/>
+    </TableRow>
+
+    <EditText
+        android:id="@+id/newExpense_note"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:hint="@string/newExpense_note"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/newExpense_peopleButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:drawableLeft="@drawable/user_group"
+        android:text="@string/newExpense_peopleButton"
+        android:onClick="launchShareBill"/>
+
+    <Button
+        android:id="@+id/newExpense_createButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:text="@string/newExpense_createButton"
+        android:onClick="launchExpenseReport" />
+
+</LinearLayout>

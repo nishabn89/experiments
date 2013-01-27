@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:id="@+id/expenseRep_editExpense"
+          android:icon="@android:drawable/ic_menu_edit"
+          android:title="@string/expenseRep_editExpense"
+          android:showAsAction="always"/>
+    <item android:id="@+id/expenseRep_deleteExpense"
+          android:icon="@android:drawable/ic_menu_delete"
+          android:title="@string/expenseRep_deleteExpense"
+          android:orderInCategory="1"
+          android:showAsAction="always" />
+</menu>

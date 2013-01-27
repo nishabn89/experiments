@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ExpenseTracker</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">Expense Tracker</string>
+    <string name="title_activity_map">Map</string>
+    <string name="main_btnNewExpense">New Expense</string>
+    <string name="main_btnViewAll">View All</string>
+    <string name="main_btnViewMap">View Map</string>
+    <string name="main_imgLogo_contentDescriptor">Banyet Logo</string>
+    <string name="newExpense_editName">Enter expense name</string>
+    <string name="newExpense_name">Expense Name</string>
+    <string name="newExpense_category">Category</string>
+    <string name="newExpense_amount">Amount</string>
+    <string name="newExpense_editAmount"></string>
+    <string name="newExpense_location">Location</string>
+    <string name="newExpense_editLocation">Add Location</string>
+    <string name="newExpense_date">Date</string>
+    <string name="newExpense_pickDate">Date</string>
+    <string name="newExpense_note">Note</string>
+    <string name="newExpense_people">Add People</string>
+    <string name="newExpense_createButton">Create Expense</string>
+    <string name="newExpense_peopleButton">Share Bill</string>
+    <string name="newExpense_editDate">Choose date</string>
+
+    <string name="sortFilter_title">Sort/Filter</string>
+    <string name="sortFilter_categorize_by">Categorize by</string>
+    <string name="sortFilter_date">Date</string>
+    <string name="sortFilter_tags">Tags</string>
+    <string name="sortFilter_filterBy">Filter By</string>
+    <string name="sortFilter_startDate">Start Date</string>
+    <string name="sortFilter_endDate">End Date</string>
+    <string name="sortFilter_apply">Apply</string>
+    <string name="sortFilter_cancel">Cancel</string>
+
+    <string-array name="category_array">
+        <item>Food</item>
+        <item>Hotel</item>
+        <item>Groceries</item>
+        <item>Health</item>
+        <item>Bank</item>
+        <item>Electronics</item>
+        <item>Shopping</item>
+        <item>Utilities</item>
+        <item>Rent</item>
+        <item>Other</item>
+    </string-array>
+
+    <string name="title_activity_new_expense">NewExpenseActivity</string>
+    <string name="title_activity_expense_report">ExpenseReportActivity</string>
+    <string name="title_activity_expense_list">ExpenseListActivity</string>
+    <string name="expenseList_activityTitle">Expense List</string>
+
+    <string name="expenseRep_name">Expense Name</string>
+    <string name="expenseRep_category">Category</string>
+    <string name="expenseRep_date">Date</string>
+    <string name="expenseRep_amount">Amount</string>
+    <string name="expenseRep_location">Location</string>
+    <string name="expenseRep_note">Note</string>
+    <string name="expenseRep_groupTag">Sharing expenses with</string>
+    <string name="expenseRep_editExpense"></string>
+    <string name="expenseRep_deleteExpense"></string>
+    <string name="expenseRep_title">Expense Report</string>
+    
+    <string name="deleteExp_yes">Yes</string>
+    <string name="deleteExp_no">Cancel</string>
+    <string name="deleteExp_confirm">Are you sure?</string>
+    
+    
+    <string name="title_activity_add_friends_share">Shared Bill</string>
+    <string name="shareExpenseRep_editExpense"></string>
+    <string name="shareExpenseRep_deleteExpense"></string>
+
+    <string name="addMoreSharedFriends">Add More Friends</string>
+    <string name="title_activity_new_share_friend">NewShareFriend</string>
+    <string name="friendShareName">Name</string>
+    <string name="friendShareAmount">Amount</string>
+    <string name="addFriendsDone">Done</string>
+    <string name="friendsShareList_edit">Edit a friend object</string>
+    <string name="sortFilter">Filter</string>
+
+</resources>

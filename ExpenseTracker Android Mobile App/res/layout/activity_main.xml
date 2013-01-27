@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="100dp" >
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:contentDescription="@string/main_imgLogo_contentDescriptor"
+        android:src="@drawable/ic_banyet" />
+
+    <Button
+        android:id="@+id/btnNewExpense"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/imgLogo"
+        android:onClick="launchNewExpense"
+        android:text="@string/main_btnNewExpense" />
+
+    <Button
+        android:id="@+id/btnViewAll"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_below="@id/imgLogo"
+        android:layout_toRightOf="@id/btnNewExpense"
+        android:onClick="launchExpenseList"
+        android:text="@string/main_btnViewAll" />
+
+    <Button
+        android:id="@+id/btnViewMap"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/imgLogo"
+        android:onClick="launchMaps"
+        android:text="@string/main_btnViewMap" />
+
+</RelativeLayout>

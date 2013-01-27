@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="12dip"
+        android:paddingRight="12dp"
+        android:paddingTop="20dip" >
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dip"
+            android:text="@string/friendShareName"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/addFriendsShareName"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:ems="10"
+            android:inputType="textPersonName" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="12dip"
+        android:paddingRight="12dp"
+        android:paddingTop="15dip" >
+
+        <TextView
+            android:id="@+id/TextView02"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dip"
+            android:text="@string/friendShareAmount"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/addFriendsShareAmt"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:ems="10"
+            android:inputType="numberDecimal" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/addMoreFriends"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="40dp"
+        android:onClick="callmoreFriendsAdded"
+        android:text="@string/addFriendsDone" />
+
+</LinearLayout>
